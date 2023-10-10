@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(24, 20, 20);
+  
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+a {
+  color: grey;
+  text-decoration: none;
+  padding: 5px;
+  position: relative;
+}
+a:hover {
+  color: white;
+}
+a::after {
+  content: '';
+  height: 3px;
+  /* width set at 100% and ::before to show effect first*/
+  width: 0;
+  background-color: rgb(0,255,157);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* or switch off transition for other effect */
+  transition: 150ms ease-in-out;
+}
+a:hover::after {
+  width: 100%;
+}

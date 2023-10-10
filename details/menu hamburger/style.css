@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(24, 20, 20);
+  color: white;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+  padding: 5px;
+}
+a:hover {
+  color: white;
+}
+nav ul {
+  list-style: none;
+  gap: 20px;
+}
+/* in default mode "mobile" the hamburger is on */
+
+/* hide checkbox */
+#toggle_button {
+  display: none;
+}
+/* position the nav bar absolute in upper left corner */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightgrey;
+  padding: 15px;
+  border-radius: 0 0 25px 0;
+}
+/* hide nav bar as default */
+nav ul {
+  display: none;
+  flex-direction: column;
+}
+/* when checkbox is checked (hidden) - show ul elemnts (menue) */
+/* https://www.w3schools.com/cssref/css_selectors.php */
+#toggle_button:checked ~ ul {
+  display: flex;
+}
+label[for="toggle_button"] {
+  display: block;
+}
+@media (min-width: 500px) {
+  
+  /* hide hamburger symbol/checkbox */
+  label[for="toggle_button"] {
+    display: none;
+  }
+  /* show menu in a row */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  /* style the nav bar without grey background */
+  nav {
+    position: relative;
+    width: 100%;
+    background-color: rgb(24, 20, 20);
+    padding: 15px;
+  }
+}

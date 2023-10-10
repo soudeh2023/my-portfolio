@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(24, 20, 20);
+  color: white;
+}
+header {
+  /* make header as flexbox and align picture */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  /* static size of picture */
+  height: 400px;
+  width: 400px;
+  /* picture relativ to x% of the width of the viewport**/
+  /* * Viewport = the browser window size.  */
+  /* https://www.w3schools.com/cssref/tryit.php?filename=trycss_unit_vw */
+  max-height: 50vw;
+  max-width: 50vw;
+
+  /* make circle and cut rest off */
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px solid #297ae3;
+}
+.circle img {
+  /* depending on format of picture to switch on, either width or height */
+  width: 100%;
+  /* height: 100%; */
+}

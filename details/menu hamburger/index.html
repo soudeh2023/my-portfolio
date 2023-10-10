@@ -1,0 +1,39 @@
+<!-- https://www.youtube.com/watch?v=QrTG4iu8cUk -->
+<!-- part of video explains the hamburger with checkbox -->
+
+<!-- für hamburger watch https://www.youtube.com/watch?v=At4wo88oRLs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menu hamburger</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <!-- reference to google symbols -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- have a nav container to use in mobile mode as card -->
+    <nav>
+      <!-- checkbox to click, will be hidden -->
+      <input type="checkbox" id="toggle_button" />
+
+      <!-- label refering to checkbox #toggle button -->
+      <label for="toggle_button">
+        <!-- hamburger symbol via google fonts -->
+        <span class="material-symbols-rounded">menu</span>
+      </label>
+      <!-- normal list with navigation information as links -->
+      <ul>
+        <li><a href="#about_me_section">Über mich</a></li>
+        <li><a href="#services_section">Dienstleistungen</a></li>
+        <li><a href="#more_information_section">Mehr Informationen</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
